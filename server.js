@@ -3,14 +3,10 @@ var src = 'http://code.jquery.com/jquery-1.11.0.min.js';
 var express = require('express');
 var app = express();
 
-
-
 var request = require('request');
-
-var baseURL = 'http://api.steampowered.com/ISteamUser/GetPlayerSummaries/v0002/?key=A9F68B7ED431B54E4B1BA8582A29D30B&steamids='
-var steamID = '76561198080297116';
-
-//auj = '76561198084251095';
+var apiKey = '<INSERT API KEY>'
+var baseURL = 'http://api.steampowered.com/ISteamUser/GetPlayerSummaries/v0002/?key=' + apiKey + '&steamids='
+var steamID = '<INSERT STEAM ID>';
 
 var dict = new Object();
 var node = '';
